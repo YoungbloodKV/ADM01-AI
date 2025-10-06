@@ -1,4 +1,4 @@
-# Experiment 13: Genetic Algorithm (maximize f(x) = x^2)
+
 
 import random
 
@@ -43,6 +43,12 @@ def mutate(chromosome):
 
 # GA main loop
 def genetic_algorithm():
+    # Unique header
+    print("============================================")
+    print(" Genetic Algorithm Execution")
+    print(" Executed by: Yash, Register No: 19255")
+    print("============================================\n")
+    
     population = [random_chromosome() for _ in range(POP_SIZE)]
     
     for gen in range(GENERATIONS):
@@ -64,7 +70,7 @@ def genetic_algorithm():
     # Best solution
     best = max(population, key=fitness)
     best_x = int("".join(str(bit) for bit in best), 2)
-    print("\n✅ Best solution found:")
+    print("\n✅ Final Best solution found by KEERTHIVASAN.S (Reg No: 192553013):")
     print(f"Chromosome: {best}, x={best_x}, Fitness={fitness(best)}")
 
 # Run GA
